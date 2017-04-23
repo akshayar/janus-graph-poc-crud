@@ -1,0 +1,4 @@
+## Following does not work. Gives error Query requires iterating over all vertices. For better performance, use indexes
+titan-db:
+  config:
+    location: file:qa/titan-berkeleydb.properties
