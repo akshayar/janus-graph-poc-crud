@@ -57,7 +57,7 @@ public class JanusGraphCrud {
 		try {
 			if (args.length != 0) {
 				logger.info("Starting germlin server");
-				GremlinServerCustom custom = GremlinServerCustom.start(args);
+				GremlinServerModified custom = GremlinServerModified.start(args);
 				Map<String, Graph> graphs = custom.getServerGremlinExecutor().getGraphManager().getGraphs();
 				Graph graph = graphs.values().iterator().next();
 				JanusGraphDBInitializer.setGraph(graph);
