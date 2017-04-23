@@ -13,8 +13,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.aksh.titan.dto.Node;
-import com.aksh.titan.dto.Relationship;
+import com.aksh.janusgraph.dto.Node;
+import com.aksh.janusgraph.dto.Relationship;
+import com.aksh.janusgraph.rest.QueryParamKeys;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)

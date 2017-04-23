@@ -4,7 +4,7 @@
     <logger name="org.springframework.web" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
-    <logger name="com.thinkaurelius.titan.diskstorage.es" level="TRACE" additivity="false">
+    <logger name="org.janusgraph.diskstorage.es" level="TRACE" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
  </configuration>

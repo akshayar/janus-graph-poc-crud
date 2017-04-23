@@ -10,9 +10,9 @@
 		<version>1.5.1.RELEASE</version>
 	</parent>
 	<properties>
-		<titandb-version>1.0.0</titandb-version>
+		<janusgraphdb-version>0.1.0</janusgraphdb-version>
 		<elasticsearch.version>1.5.1</elasticsearch.version>
-		<tinkerpop-version>3.0.1-incubating</tinkerpop-version>
+		<tinkerpop-version>3.2.3</tinkerpop-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -20,9 +20,9 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.thinkaurelius.titan</groupId>
-			<artifactId>titan-core</artifactId>
-			<version>${titandb-version}</version>
+			<groupId>org.janusgraph</groupId>
+			<artifactId>janusgraph-core</artifactId>
+			<version>${janusgraphdb-version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
@@ -31,14 +31,14 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>com.thinkaurelius.titan</groupId>
-			<artifactId>titan-berkeleyje</artifactId>
-			<version>${titandb-version}</version>
+			<groupId>org.janusgraph</groupId>
+			<artifactId>janusgraph-berkeleyje</artifactId>
+			<version>${janusgraphdb-version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.thinkaurelius.titan</groupId>
-			<artifactId>titan-cassandra</artifactId>
-			<version>${titandb-version}</version>
+			<groupId>org.janusgraph</groupId>
+			<artifactId>janusgraph-cassandra</artifactId>
+			<version>${janusgraphdb-version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
@@ -47,9 +47,9 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>com.thinkaurelius.titan</groupId>
-			<artifactId>titan-es</artifactId>
-			<version>${titandb-version}</version>
+			<groupId>org.janusgraph</groupId>
+			<artifactId>janusgraph-es</artifactId>
+			<version>${janusgraphdb-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tinkerpop</groupId>

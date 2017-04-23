@@ -6,9 +6,9 @@ scriptEvaluationTimeout: 30000
 serializedResponseTimeout: 30000
 channelizer: org.apache.tinkerpop.gremlin.server.channel.HttpChannelizer
 graphs: {
-  graph: config/titan-berkeleydb-es.properties}
+  graph: config/janusgraph-berkeleydb-es.properties}
 plugins:
-  - aurelius.titan
+  - janusgraph.imports
 scriptEngines: {
   gremlin-groovy: {
     imports: [java.lang.Math],
