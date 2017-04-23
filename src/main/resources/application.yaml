@@ -1,7 +1,7 @@
 ## Following does not work. Gives error Query requires iterating over all vertices. For better performance, use indexes
 janus-db:
   config:
-    location: file:src/main/resources/dev/janusgraph-berkeleydb.properties
+    location: file:src/main/resources/dev/janusgraph-cassandra-es.properties
 
 schema:
   labels:

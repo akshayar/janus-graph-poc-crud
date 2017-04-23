@@ -6,7 +6,7 @@ scriptEvaluationTimeout: 30000
 serializedResponseTimeout: 30000
 channelizer: org.apache.tinkerpop.gremlin.server.channel.HttpChannelizer
 graphs: {
-  graph: src/main/resources/dev/janusgraph-berkeleydb.properties}
+  graph: src/main/resources/dev/janusgraph-cassandra-es.properties}
 plugins:
   - janusgraph.imports
 scriptEngines: {
